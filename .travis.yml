@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t mouadlousimi/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run mouadlousimi/docker-react yarn run test -- --coverage
