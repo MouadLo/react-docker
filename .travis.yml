@@ -13,7 +13,7 @@ deploy:
   provider: heroku
   api_key: 
     secure: $HEROKU_ACCESS_KEY
-  app: whispering-atoll-34766
+  app: "whispering-atoll-34766"
   on:
     branch: master
   
