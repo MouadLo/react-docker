@@ -8,3 +8,11 @@ before_install:
 
 script:
   - docker run mouadlousimi/docker-react yarn run test -- --coverage
+
+deploy:
+  provider: heroku
+  api_key: ...
+  app: whispering-atoll-34766
+  on:
+    branch: master
+  
